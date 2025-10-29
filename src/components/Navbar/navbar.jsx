@@ -1,8 +1,8 @@
 function Navbar (){
     return (
-        <div>
+        <div className="bg-[#34495e] text-[#fff] flex justify-center px-10 p-8">
             <img src="" alt="" />
-            <ul>
+            <ul className="flex gap-20 text-lg ">
                 <a href=""><li>Home</li></a>
                 <a href=""><li>Services</li></a>
                 <a href=""><li>Team</li></a>
