@@ -1,6 +1,8 @@
+import Charts from './Charts/report.jsx';
+
 function Summaries() {
     return (
-        <div className="w-[100%] mt-9 ">
+        <div className="w-[80%] mt-9 ">
             <h1 className="text-2xl font-semibold">Grocery Inventory Dashboard</h1>
             <div className="flex gap-2 mt-5">
                  <section className="space-y-3 p-5 bg-slate-200 rounded-xl w-[100%]">
@@ -20,6 +22,7 @@ function Summaries() {
                     <p className="font-semibold">3,210</p>
                 </section>
             </div>
+            <Charts />
         </div>
     );
 }
