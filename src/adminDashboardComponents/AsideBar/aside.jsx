@@ -9,6 +9,8 @@ import account from '../../components/Photos/account.png';
 import support from '../../components/Photos/support.png';
 import contact from '../../components/Photos/contact.png';
 
+import AsideComponent from './asideComponent.jsx';
+
 function AsideBar() {
     return (
         <aside className='w-[20%] '>
@@ -20,46 +22,27 @@ function AsideBar() {
                 </div>
                 <ul className="ml-4 text-sm mt-4 space-y-3">                   
                     <li>
-                        <div className='flex gap-2'>
-                            <img src={order} alt="" width={20} />
-                            <a href="">Orders</a>
-                        </div>
-                        
-                    </li>
-                    
-                    <li>
-                        <div className='flex gap-2'>
-                            <img src={delivery} alt="" width={20} />
-                            <a href="">Deliveries</a>
-                        </div>
+                        <AsideComponent src={order} href="" text="Orders" />                        
                     </li>
 
                     <li>
-                        <div className='flex gap-2'>
-                            <img src={customer} alt="" width={20} />
-                            <a href="">Customers</a>
-                        </div>
+                        <AsideComponent src={delivery} href="" text="Deliveries" />
                     </li>
 
                     <li>
-                        <div className='flex gap-2'>
-                            <img src={chart} alt="" width={20} />
-                            <a href="">Report & Analysis</a>
-                        </div>
+                        <AsideComponent src={customer} href="" text="Customers" />
                     </li>
 
                     <li>
-                        <div className='flex gap-2'>
-                            <img src={setting} alt="" width={20} />
-                            <a href="">Settings</a>
-                        </div>
+                        <AsideComponent src={chart} href="" text="Reports & Analysis" />
                     </li>
 
                     <li>
-                      <div className='flex gap-2'>
-                        <img src={account} alt="" width={20} />
-                        <a href="">My Account</a>
-                      </div>
+                        <AsideComponent src={setting} href="" text="Settings" />
+                    </li>
+
+                    <li>
+                        <AsideComponent src={account} href="" text="My Account" />
                     </li>
                 </ul>
             </div>
@@ -67,16 +50,10 @@ function AsideBar() {
                 <p className="text-sm font-semibold mt-2">SUPPORT</p>
                 <ul className="ml-4 text-sm mt-4 space-y-3">
                     <li>
-                        <div className='flex gap-2'>
-                            <img src={support} alt="" width={20} />
-                            <a href="">Help Center</a>
-                        </div>
+                        <AsideComponent src={support} href="" text="Help Center" />
                     </li>
                     <li>
-                        <div className='flex gap-2'>
-                            <img src={contact} alt="" width={20} />
-                            <a href="">Contact Us</a>
-                        </div>
+                        <AsideComponent src={contact} href="" text="Contact Us" />
                     </li>
                 </ul>
             </div>
